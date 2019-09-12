@@ -25,6 +25,7 @@ app.get('' , (req , res)=>{
     res.render('index')
 })
 
+// HTTP Endpoint
 app.get('/weather', (req , res)=>{
     if(!req.query.address){
         res.send({
